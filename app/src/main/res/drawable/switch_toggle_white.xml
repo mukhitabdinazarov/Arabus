@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape
+            android:shape="oval">
+            <solid
+                android:color="#ffffff" />
+            <stroke android:width="0.5dp"
+                android:color="@color/light_green"/>
+            <size
+                android:width="29dp"
+                android:height="29dp" />
+
+        </shape>
+
+    </item>
+
+    <item android:drawable="@drawable/ic_lighting_small_green"
+        android:gravity="center">
+    </item>
+
+</layer-list>

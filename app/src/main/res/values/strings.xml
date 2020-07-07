@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Arabus</string>
+    <string name="search_title">Мәтінді енгізіңіз  |  إدخال نص</string>
+    <string name="root_words_title">Түбірлес сөздер:</string>
+    <string name="text_successfully_copied">Скопировано!</string>
+    <string name="intent_choser_title">Біреуін таңдаңыз</string>
+    <string name="favorites_title">Таңдаулылар</string>
+    <string name="favorites_error_empty_list_text">Сіздің таңдаулыларыңыз сақталмаған. \nҚайтадан жаңартып көріңіз.</string>
+    <string name="repeat_title">Кайтадан</string>
+</resources>

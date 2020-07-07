@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/arabic_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        tools:text="ثانيا-التطورات الذاتية" />
+
+    <TextView
+        android:id="@+id/kazakh_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:textAlignment="viewEnd"
+        android:textColor="@color/textColor"
+        tools:text="Өзін-өзі дамыту" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/main_navigation_graph" />
+
+    <com.gauravk.bubblenavigation.BubbleNavigationLinearView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@color/green"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        app:bnc_mode="inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/menu_search_selector"
+            app:bt_shape="@drawable/transition_background"
+            app:bt_title="Іздеу" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/menu_favorites_selector"
+            app:bt_shape="@drawable/transition_background"
+            app:bt_title="Таңдаулылар" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/menu_games_selector"
+            app:bt_shape="@drawable/transition_background"
+            app:bt_title="Жаттығулар" />
+
+        <com.gauravk.bubblenavigation.BubbleToggleView
+            android:id="@+id/l_item_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bt_colorActive="@color/white"
+            app:bt_colorInactive="@color/light_orange"
+            app:bt_icon="@drawable/menu_settings_selector"
+            app:bt_shape="@drawable/transition_background"
+            app:bt_title="Баптаулар" />
+
+    </com.gauravk.bubblenavigation.BubbleNavigationLinearView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
